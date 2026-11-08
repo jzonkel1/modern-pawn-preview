@@ -1,13 +1,15 @@
 /* Modern Pawn & Guns. Headlines: Montserrat ExtraBold caps (the badge's geometric MODERN lettering).
    Badge = black on white, so the page is gunmetal + bone; blaze orange comes from the price tags on their own racks. */
 @font-face{font-family:"Montserrat";src:url(/fonts/montserrat.woff2) format("woff2");font-weight:600 900;font-style:normal;font-display:block}
+@font-face{font-family:"Oswald";src:url(/fonts/oswald.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:block}
 @font-face{font-family:"IBM Plex Sans";src:url(/fonts/plex.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:block}
 :root{
   --ink:#0f1a2e; --steel:#16243c; --steel-2:#203352; --steel-line:rgba(255,255,255,.12);
   --bone:#f2efe8; --bone-2:#e7e2d7; --white:#ffffff; --line:#ddd7cb; --line-2:#cfc8ba;
   --orange:#b01e3a; --orange-2:#c92c49; --orange-dk:#8c1730; --sky:#8db4e6;
   --text:#2c2e33; --muted:#62666d;
-  --f-head:"Montserrat",system-ui,sans-serif;
+  --f-head:"Oswald","Arial Narrow",system-ui,sans-serif;
+  --f-logo:"Montserrat",system-ui,sans-serif;
   --f-body:"IBM Plex Sans",system-ui,sans-serif;
   --wrap:1220px; --r:2px; --hh:84px;
 }
@@ -18,13 +20,13 @@ body.menu-open{overflow:hidden}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 .wrap{width:min(var(--wrap),100% - 48px);margin-inline:auto}
-h1,h2,h3{font-family:var(--f-head);font-weight:800;color:var(--ink);line-height:1.04;text-transform:uppercase;letter-spacing:.005em;text-wrap:balance}
+h1,h2,h3{font-family:var(--f-head);font-weight:600;color:var(--ink);line-height:1.02;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
 h2{font-size:clamp(1.8rem,3.4vw,2.85rem)}
 .lede{font-size:1.12rem;color:var(--muted);max-width:52ch}
 p,li,dd,small,cite{text-wrap:pretty}
 .kick,.qw-opt,.hero-trust b,.hero-trust small,.tile p{text-wrap:balance}
 /* signature: the badge's crosshair as the section marker */
-.kick{display:flex;align-items:center;gap:10px;font-family:var(--f-head);font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--orange-dk);margin-bottom:1rem}
+.kick{display:flex;align-items:center;gap:10px;font-family:var(--f-head);font-size:.9rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--orange-dk);margin-bottom:1rem}
 .kick::before{content:"";width:20px;height:20px;flex:none;border-radius:50%;border:2px solid currentColor;background:linear-gradient(currentColor,currentColor) 50% 0/2px 5px no-repeat,linear-gradient(currentColor,currentColor) 50% 100%/2px 5px no-repeat,linear-gradient(currentColor,currentColor) 0 50%/5px 2px no-repeat,linear-gradient(currentColor,currentColor) 100% 50%/5px 2px no-repeat,radial-gradient(circle,currentColor 0 1.6px,transparent 2px)}
 .dark .kick{color:var(--sky)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem 1.6rem;border-radius:var(--r);font-family:var(--f-head);font-weight:700;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s,border-color .2s;border:2px solid transparent;white-space:nowrap;cursor:pointer}
@@ -46,7 +48,7 @@ p,li,dd,small,cite{text-wrap:pretty}
 .hdr .wrap{display:flex;align-items:center;gap:1.4rem;height:var(--hh)}
 .logo{display:flex;align-items:center;gap:.8rem;text-decoration:none}
 .logo img{width:64px;height:64px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.15)}
-.logo span{font-family:var(--f-head);font-weight:800;text-transform:uppercase;color:#fff;line-height:1.05;font-size:1rem;letter-spacing:.04em}
+.logo span{font-family:var(--f-logo);font-weight:800;text-transform:uppercase;color:#fff;line-height:1.05;font-size:1rem;letter-spacing:.04em}
 .logo span small{display:block;font-size:.66rem;letter-spacing:.24em;color:var(--sky);font-weight:700}
 .nav{display:flex;gap:.1rem;margin-left:auto;align-items:center}
 .nav > a,.dd > button{background:none;border:0;font:inherit;font-size:.95rem;color:#ecebe7;text-decoration:none;padding:.6rem .75rem;cursor:pointer;display:inline-flex;align-items:center;gap:.4rem}
@@ -382,6 +384,18 @@ footer a:hover{color:var(--sky)}
 .f-social a:hover{background:rgba(255,255,255,.16);color:#fff}
 .f-social svg{width:20px;height:20px}
 @media (max-width:760px){.f-social{justify-content:center}}
+
+/* 11/7/26 Oswald headlines (Jeffrey: Montserrat read cartoony). Condensed type reads smaller, so the
+   small all-caps labels set in --f-head get a size bump; headlines get a little more size. */
+.hero h1{font-size:clamp(2.9rem,5.6vw,4.8rem);line-height:1}
+@media(max-width:760px){.hero h1{font-size:clamp(2.2rem,10.5vw,2.8rem)}}
+h2{line-height:1.02}
+.tile.ph .tag{font-size:.78rem;letter-spacing:.14em}
+.tile.tx .tag{font-size:.8rem;letter-spacing:.16em}
+.hero-trust b{font-size:1rem}
+footer h4{font-size:.98rem}
+.btn{font-size:1.02rem;letter-spacing:.07em}
+.hdr-call{font-size:1.1rem}
 
 /* ===== inner pages (appended after the demo's site.css) ===== */
 .nav > a.on,.dd > button.on{color:var(--sky)}
