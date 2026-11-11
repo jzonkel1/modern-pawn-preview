@@ -1,0 +1,13 @@
+{
+  "photos": {
+    "hero_jewelcase": {
+      "photo": "/img/hero-jewelcase-1500.jpg",
+      "description": "Trays of rings and chains in the glass case at Modern Pawn and Guns",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

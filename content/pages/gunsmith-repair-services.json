@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_cerakote": {
+      "photo": "/img/hero-cerakote-1500.jpg",
+      "description": "Rifle with a custom woodland camo Cerakote finish on a tripod",
+      "crop": "middle"
+    },
+    "fig_ldove": {
+      "photo": "/img/fig-ldove.jpg",
+      "description": "Custom .22 ARC rifle with an antique map Cerakote finish",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

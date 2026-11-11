@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_benelli": {
+      "photo": "/img/hero-benelli-1500.jpg",
+      "description": "Benelli shotgun with a camo stock in a hard case",
+      "crop": "middle"
+    },
+    "fig_ridgeline": {
+      "photo": "/img/fig-ridgeline.jpg",
+      "description": "Two Christensen Arms Ridgeline rifles in camo finishes leaning on a wall",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_ar15": {
+      "photo": "/img/hero-ar15-1500.jpg",
+      "description": "AR rifle on the counter mat with its price tag",
+      "crop": "middle"
+    },
+    "fig_lower": {
+      "photo": "/img/fig-lower.jpg",
+      "description": "Stripped AR lower receiver in its shipping box",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

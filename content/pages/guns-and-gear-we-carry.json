@@ -1,0 +1,23 @@
+{
+  "photos": {
+    "hero_wall": {
+      "photo": "/img/hero-wall-1500.jpg",
+      "description": "Rifles racked above glass cases of handguns at Modern Pawn and Guns",
+      "crop": "middle"
+    },
+    "fig_wall": {
+      "photo": "/img/fig-wall.jpg",
+      "description": "Rifles in racks above glass cases of handguns",
+      "crop": "middle"
+    },
+    "t_cerakote": {
+      "photo": "/img/t-cerakote.jpg",
+      "description": "Rifle with a custom woodland camo Cerakote finish",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

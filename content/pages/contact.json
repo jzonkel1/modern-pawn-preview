@@ -1,0 +1,13 @@
+{
+  "photos": {
+    "hero_storefront": {
+      "photo": "/img/hero-storefront-1500.jpg",
+      "description": "The Modern Pawn and Guns storefront sign on Airline Road",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

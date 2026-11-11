@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_suppressors": {
+      "photo": "/img/hero-suppressors-1500.jpg",
+      "description": "Suppressors in their boxes in the glass case, with a 4473 suppressors sign on top",
+      "crop": "middle"
+    },
+    "fig_cans": {
+      "photo": "/img/fig-cans.jpg",
+      "description": "Boxed suppressors in a glass case at Modern Pawn and Guns",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

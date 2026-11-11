@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_kimber": {
+      "photo": "/img/hero-kimber-1500.jpg",
+      "description": "Kimber 2K11 pistol with a bronze finish",
+      "crop": "middle"
+    },
+    "fig_mp": {
+      "photo": "/img/fig-mp.jpg",
+      "description": "Smith and Wesson M&P pistol in its case with spare magazines",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

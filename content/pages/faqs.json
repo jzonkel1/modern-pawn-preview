@@ -1,0 +1,13 @@
+{
+  "photos": {
+    "hero_tavor": {
+      "photo": "/img/hero-tavor-1500.jpg",
+      "description": "New tan bullpup in its case",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

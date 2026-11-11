@@ -1,0 +1,624 @@
+{
+ "base": "",
+ "css": "css/site.css",
+ "hours_js": [
+  "js/site.js"
+ ],
+ "kick_html": "<p class=\"kick\">Photos</p>",
+ "colors": {
+  "ink": "#0f1a2e",
+  "paper": "#f2efe8"
+ },
+ "hours_default": {
+  "monday": [
+   9,
+   19
+  ],
+  "tuesday": [
+   9,
+   19
+  ],
+  "wednesday": [
+   9,
+   19
+  ],
+  "thursday": [
+   9,
+   19
+  ],
+  "friday": [
+   9,
+   19
+  ],
+  "saturday": [
+   9,
+   19
+  ],
+  "sunday": null
+ },
+ "hours_phrases": {
+  "days_long": "Monday to Saturday",
+  "days_short": "Mon to Sat",
+  "time_short": "9 to 7",
+  "time_long": "9 AM to 7 PM",
+  "closed": "Sunday"
+ },
+ "pages": {
+  "home": {
+   "label": "Home page",
+   "html": "index.html",
+   "slots": {
+    "hero": {
+     "files": [
+      {
+       "file": "img/hero.jpg",
+       "w": 1920,
+       "h": 1440
+      },
+      {
+       "file": "img/hero-m.jpg",
+       "w": 900,
+       "h": 1200
+      }
+     ],
+     "default": "/img/hero.jpg",
+     "alt": "Wall of Benelli shotguns and rifles with price tags at Modern Pawn and Guns",
+     "label": "Wall of Benelli shotguns and rifles with price tags at Modern Pawn and Guns",
+     "also": []
+    },
+    "t_handguns": {
+     "files": [
+      {
+       "file": "img/t-handguns.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-handguns.jpg",
+     "alt": "Smith and Wesson M&P pistol in its case with magazines",
+     "label": "Smith and Wesson M&P pistol in its case with magazines",
+     "also": [
+      "Ffl transfers page",
+      "Gold and jewelry page",
+      "Gunsmith repair services page",
+      "Layaway and special orders page",
+      "Pawn loans page",
+      "Suppressors page",
+      "We buy guns page"
+     ]
+    },
+    "t_sbr": {
+     "files": [
+      {
+       "file": "img/t-sbr.jpg",
+       "w": 1000,
+       "h": 750
+      }
+     ],
+     "default": "/img/t-sbr.jpg",
+     "alt": "Short-barreled AR rifle",
+     "label": "Short-barreled AR rifle",
+     "also": []
+    },
+    "t_shotgun": {
+     "files": [
+      {
+       "file": "img/t-shotgun.jpg",
+       "w": 1000,
+       "h": 666
+      }
+     ],
+     "default": "/img/t-shotgun.jpg",
+     "alt": "Camo Benelli shotgun in a hard case",
+     "label": "Camo Benelli shotgun in a hard case",
+     "also": []
+    },
+    "t_ffl": {
+     "files": [
+      {
+       "file": "img/t-ffl.jpg",
+       "w": 780,
+       "h": 585
+      }
+     ],
+     "default": "/img/t-ffl.jpg",
+     "alt": "AR upper and lower receiver in a shipping box",
+     "label": "AR upper and lower receiver in a shipping box",
+     "also": []
+    },
+    "t_pawn": {
+     "files": [
+      {
+       "file": "img/t-pawn.jpg",
+       "w": 1000,
+       "h": 750
+      }
+     ],
+     "default": "/img/t-pawn.jpg",
+     "alt": "Kimber 2K11 pistol with a bronze finish",
+     "label": "Kimber 2K11 pistol with a bronze finish",
+     "also": []
+    },
+    "t_ammo": {
+     "files": [
+      {
+       "file": "img/t-ammo.jpg",
+       "w": 800,
+       "h": 800
+      }
+     ],
+     "default": "/img/t-ammo.jpg",
+     "alt": "Shelves stocked floor to ceiling with ammunition",
+     "label": "Shelves stocked floor to ceiling with ammunition",
+     "also": []
+    },
+    "t_build": {
+     "files": [
+      {
+       "file": "img/t-build.jpg",
+       "w": 1000,
+       "h": 750
+      }
+     ],
+     "default": "/img/t-build.jpg",
+     "alt": "Custom AR build with a camo finish",
+     "label": "Custom AR build with a camo finish",
+     "also": []
+    },
+    "t_tavor": {
+     "files": [
+      {
+       "file": "img/t-tavor.jpg",
+       "w": 1000,
+       "h": 667
+      }
+     ],
+     "default": "/img/t-tavor.jpg",
+     "alt": "New bullpup rifle in its case",
+     "label": "New bullpup rifle in its case",
+     "also": [
+      "Ffl transfers page",
+      "Gold and jewelry page",
+      "Guns and gear we carry page",
+      "Gunsmith repair services page",
+      "Pawn loans page",
+      "Suppressors page"
+     ]
+    },
+    "first_rack": {
+     "files": [
+      {
+       "file": "img/first-rack.jpg",
+       "w": 1100,
+       "h": 825
+      }
+     ],
+     "default": "/img/first-rack.jpg",
+     "alt": "Rifle rack above the handgun display cases",
+     "label": "Rifle rack above the handgun display cases",
+     "also": []
+    },
+    "storefront": {
+     "files": [
+      {
+       "file": "img/storefront.jpg",
+       "w": 1200,
+       "h": 532
+      }
+     ],
+     "default": "/img/storefront.jpg",
+     "alt": "The Modern Pawn and Guns storefront sign on Airline Road",
+     "label": "The Modern Pawn and Guns storefront sign on Airline Road",
+     "also": [
+      "About page",
+      "Contact page",
+      "Faqs page",
+      "Ffl transfers page",
+      "Gold and jewelry page",
+      "Guns and gear we carry page",
+      "Gunsmith repair services page",
+      "Layaway and special orders page",
+      "Pawn loans page",
+      "Suppressors page",
+      "We buy guns page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "about": {
+   "label": "About page",
+   "html": "about/index.html",
+   "slots": {
+    "hero_ammo": {
+     "files": [
+      {
+       "file": "img/hero-ammo-1500.jpg",
+       "w": 1500,
+       "h": 1125
+      },
+      {
+       "file": "img/hero-ammo-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-ammo-1500.jpg",
+     "alt": "Shelves stocked floor to ceiling with ammunition behind the glass counter",
+     "label": "Shelves stocked floor to ceiling with ammunition behind the glass counter",
+     "also": []
+    },
+    "fig_first": {
+     "files": [
+      {
+       "file": "img/fig-first.jpg",
+       "w": 1000,
+       "h": 750
+      }
+     ],
+     "default": "/img/fig-first.jpg",
+     "alt": "Racks of shotguns and rifles with price tags under the Springfield XD banner",
+     "label": "Racks of shotguns and rifles with price tags under the Springfield XD banner",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "contact": {
+   "label": "Contact page",
+   "html": "contact/index.html",
+   "slots": {
+    "hero_storefront": {
+     "files": [
+      {
+       "file": "img/hero-storefront-1500.jpg",
+       "w": 1500,
+       "h": 665
+      },
+      {
+       "file": "img/hero-storefront-800.jpg",
+       "w": 800,
+       "h": 354
+      }
+     ],
+     "default": "/img/hero-storefront-1500.jpg",
+     "alt": "The Modern Pawn and Guns storefront sign on Airline Road",
+     "label": "The Modern Pawn and Guns storefront sign on Airline Road",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "faqs": {
+   "label": "Faqs page",
+   "html": "faqs/index.html",
+   "slots": {
+    "hero_tavor": {
+     "files": [
+      {
+       "file": "img/hero-tavor-1500.jpg",
+       "w": 1500,
+       "h": 789
+      },
+      {
+       "file": "img/hero-tavor-800.jpg",
+       "w": 800,
+       "h": 421
+      }
+     ],
+     "default": "/img/hero-tavor-1500.jpg",
+     "alt": "New tan bullpup in its case",
+     "label": "New tan bullpup in its case",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "ffl-transfers": {
+   "label": "Ffl transfers page",
+   "html": "ffl-transfers/index.html",
+   "slots": {
+    "hero_ar15": {
+     "files": [
+      {
+       "file": "img/hero-ar15-1500.jpg",
+       "w": 1040,
+       "h": 650
+      },
+      {
+       "file": "img/hero-ar15-800.jpg",
+       "w": 800,
+       "h": 500
+      }
+     ],
+     "default": "/img/hero-ar15-1500.jpg",
+     "alt": "AR rifle on the counter mat with its price tag",
+     "label": "AR rifle on the counter mat with its price tag",
+     "also": []
+    },
+    "fig_lower": {
+     "files": [
+      {
+       "file": "img/fig-lower.jpg",
+       "w": 780,
+       "h": 975
+      }
+     ],
+     "default": "/img/fig-lower.jpg",
+     "alt": "Stripped AR lower receiver in its shipping box",
+     "label": "Stripped AR lower receiver in its shipping box",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "gold-and-jewelry": {
+   "label": "Gold and jewelry page",
+   "html": "gold-and-jewelry/index.html",
+   "slots": {
+    "hero_jewelcase": {
+     "files": [
+      {
+       "file": "img/hero-jewelcase-1500.jpg",
+       "w": 1216,
+       "h": 760
+      },
+      {
+       "file": "img/hero-jewelcase-800.jpg",
+       "w": 800,
+       "h": 500
+      }
+     ],
+     "default": "/img/hero-jewelcase-1500.jpg",
+     "alt": "Trays of rings and chains in the glass case at Modern Pawn and Guns",
+     "label": "Trays of rings and chains in the glass case at Modern Pawn and Guns",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "guns-and-gear-we-carry": {
+   "label": "Guns and gear we carry page",
+   "html": "guns-and-gear-we-carry/index.html",
+   "slots": {
+    "hero_wall": {
+     "files": [
+      {
+       "file": "img/hero-wall-1500.jpg",
+       "w": 1440,
+       "h": 1080
+      },
+      {
+       "file": "img/hero-wall-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-wall-1500.jpg",
+     "alt": "Rifles racked above glass cases of handguns at Modern Pawn and Guns",
+     "label": "Rifles racked above glass cases of handguns at Modern Pawn and Guns",
+     "also": []
+    },
+    "fig_wall": {
+     "files": [
+      {
+       "file": "img/fig-wall.jpg",
+       "w": 1200,
+       "h": 900
+      }
+     ],
+     "default": "/img/fig-wall.jpg",
+     "alt": "Rifles in racks above glass cases of handguns",
+     "label": "Rifles in racks above glass cases of handguns",
+     "also": []
+    },
+    "t_cerakote": {
+     "files": [
+      {
+       "file": "img/t-cerakote.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/t-cerakote.jpg",
+     "alt": "Rifle with a custom woodland camo Cerakote finish",
+     "label": "Rifle with a custom woodland camo Cerakote finish",
+     "also": [
+      "Suppressors page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "gunsmith-repair-services": {
+   "label": "Gunsmith repair services page",
+   "html": "gunsmith-repair-services/index.html",
+   "slots": {
+    "hero_cerakote": {
+     "files": [
+      {
+       "file": "img/hero-cerakote-1500.jpg",
+       "w": 1440,
+       "h": 1080
+      },
+      {
+       "file": "img/hero-cerakote-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-cerakote-1500.jpg",
+     "alt": "Rifle with a custom woodland camo Cerakote finish on a tripod",
+     "label": "Rifle with a custom woodland camo Cerakote finish on a tripod",
+     "also": []
+    },
+    "fig_ldove": {
+     "files": [
+      {
+       "file": "img/fig-ldove.jpg",
+       "w": 1200,
+       "h": 900
+      }
+     ],
+     "default": "/img/fig-ldove.jpg",
+     "alt": "Custom .22 ARC rifle with an antique map Cerakote finish",
+     "label": "Custom .22 ARC rifle with an antique map Cerakote finish",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "layaway-and-special-orders": {
+   "label": "Layaway and special orders page",
+   "html": "layaway-and-special-orders/index.html",
+   "slots": {
+    "hero_benelli": {
+     "files": [
+      {
+       "file": "img/hero-benelli-1500.jpg",
+       "w": 1500,
+       "h": 750
+      },
+      {
+       "file": "img/hero-benelli-800.jpg",
+       "w": 800,
+       "h": 400
+      }
+     ],
+     "default": "/img/hero-benelli-1500.jpg",
+     "alt": "Benelli shotgun with a camo stock in a hard case",
+     "label": "Benelli shotgun with a camo stock in a hard case",
+     "also": []
+    },
+    "fig_ridgeline": {
+     "files": [
+      {
+       "file": "img/fig-ridgeline.jpg",
+       "w": 1200,
+       "h": 1500
+      }
+     ],
+     "default": "/img/fig-ridgeline.jpg",
+     "alt": "Two Christensen Arms Ridgeline rifles in camo finishes leaning on a wall",
+     "label": "Two Christensen Arms Ridgeline rifles in camo finishes leaning on a wall",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "pawn-loans": {
+   "label": "Pawn loans page",
+   "html": "pawn-loans/index.html",
+   "slots": {
+    "hero_kimber": {
+     "files": [
+      {
+       "file": "img/hero-kimber-1500.jpg",
+       "w": 1440,
+       "h": 1080
+      },
+      {
+       "file": "img/hero-kimber-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-kimber-1500.jpg",
+     "alt": "Kimber 2K11 pistol with a bronze finish",
+     "label": "Kimber 2K11 pistol with a bronze finish",
+     "also": []
+    },
+    "fig_mp": {
+     "files": [
+      {
+       "file": "img/fig-mp.jpg",
+       "w": 1200,
+       "h": 900
+      }
+     ],
+     "default": "/img/fig-mp.jpg",
+     "alt": "Smith and Wesson M&P pistol in its case with spare magazines",
+     "label": "Smith and Wesson M&P pistol in its case with spare magazines",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "suppressors": {
+   "label": "Suppressors page",
+   "html": "suppressors/index.html",
+   "slots": {
+    "hero_suppressors": {
+     "files": [
+      {
+       "file": "img/hero-suppressors-1500.jpg",
+       "w": 1500,
+       "h": 938
+      },
+      {
+       "file": "img/hero-suppressors-800.jpg",
+       "w": 800,
+       "h": 500
+      }
+     ],
+     "default": "/img/hero-suppressors-1500.jpg",
+     "alt": "Suppressors in their boxes in the glass case, with a 4473 suppressors sign on top",
+     "label": "Suppressors in their boxes in the glass case, with a 4473 suppressors sign on top",
+     "also": []
+    },
+    "fig_cans": {
+     "files": [
+      {
+       "file": "img/fig-cans.jpg",
+       "w": 720,
+       "h": 900
+      }
+     ],
+     "default": "/img/fig-cans.jpg",
+     "alt": "Boxed suppressors in a glass case at Modern Pawn and Guns",
+     "label": "Boxed suppressors in a glass case at Modern Pawn and Guns",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "we-buy-guns": {
+   "label": "We buy guns page",
+   "html": "we-buy-guns/index.html",
+   "slots": {
+    "hero_ar10": {
+     "files": [
+      {
+       "file": "img/hero-ar10-1500.jpg",
+       "w": 1440,
+       "h": 1080
+      },
+      {
+       "file": "img/hero-ar10-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-ar10-1500.jpg",
+     "alt": "Camo AR-10 rifle in 22 Creedmoor",
+     "label": "Camo AR-10 rifle in 22 Creedmoor",
+     "also": []
+    },
+    "fig_taylor": {
+     "files": [
+      {
+       "file": "img/fig-taylor.jpg",
+       "w": 1200,
+       "h": 900
+      }
+     ],
+     "default": "/img/fig-taylor.jpg",
+     "alt": "Taylor and Co. reproduction revolver and lever-action rifle on a black background",
+     "label": "Taylor and Co. reproduction revolver and lever-action rifle on a black background",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  }
+ }
+}

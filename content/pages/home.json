@@ -1,0 +1,63 @@
+{
+  "photos": {
+    "hero": {
+      "photo": "/img/hero.jpg",
+      "description": "Wall of Benelli shotguns and rifles with price tags at Modern Pawn and Guns",
+      "crop": "middle"
+    },
+    "t_handguns": {
+      "photo": "/img/t-handguns.jpg",
+      "description": "Smith and Wesson M&P pistol in its case with magazines",
+      "crop": "middle"
+    },
+    "t_sbr": {
+      "photo": "/img/t-sbr.jpg",
+      "description": "Short-barreled AR rifle",
+      "crop": "middle"
+    },
+    "t_shotgun": {
+      "photo": "/img/t-shotgun.jpg",
+      "description": "Camo Benelli shotgun in a hard case",
+      "crop": "middle"
+    },
+    "t_ffl": {
+      "photo": "/img/t-ffl.jpg",
+      "description": "AR upper and lower receiver in a shipping box",
+      "crop": "middle"
+    },
+    "t_pawn": {
+      "photo": "/img/t-pawn.jpg",
+      "description": "Kimber 2K11 pistol with a bronze finish",
+      "crop": "middle"
+    },
+    "t_ammo": {
+      "photo": "/img/t-ammo.jpg",
+      "description": "Shelves stocked floor to ceiling with ammunition",
+      "crop": "middle"
+    },
+    "t_build": {
+      "photo": "/img/t-build.jpg",
+      "description": "Custom AR build with a camo finish",
+      "crop": "middle"
+    },
+    "t_tavor": {
+      "photo": "/img/t-tavor.jpg",
+      "description": "New bullpup rifle in its case",
+      "crop": "middle"
+    },
+    "first_rack": {
+      "photo": "/img/first-rack.jpg",
+      "description": "Rifle rack above the handgun display cases",
+      "crop": "middle"
+    },
+    "storefront": {
+      "photo": "/img/storefront.jpg",
+      "description": "The Modern Pawn and Guns storefront sign on Airline Road",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

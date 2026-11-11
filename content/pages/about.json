@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_ammo": {
+      "photo": "/img/hero-ammo-1500.jpg",
+      "description": "Shelves stocked floor to ceiling with ammunition behind the glass counter",
+      "crop": "middle"
+    },
+    "fig_first": {
+      "photo": "/img/fig-first.jpg",
+      "description": "Racks of shotguns and rifles with price tags under the Springfield XD banner",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

@@ -1,0 +1,988 @@
+media:
+  input: site/img
+  output: /img
+  path: site/img/uploads
+  extensions: [jpg, jpeg, png, webp, heic]
+content:
+  - name: settings
+    label: "Hours and banner"
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: banner
+        label: "Banner at the top of every page"
+        type: object
+        fields:
+          - name: show
+            label: "Show the banner"
+            type: boolean
+          - name: text
+            label: "Banner message"
+            description: "One short line, e.g. Closed Thanksgiving Day. Open Friday 10 to 6."
+            type: string
+      - name: hours
+        label: "Store hours"
+        description: "Changes every hours line on the site, the open-now line and Google. Untick Open for days you are closed."
+        type: object
+        fields:
+          - name: monday
+            label: Monday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: tuesday
+            label: Tuesday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: wednesday
+            label: Wednesday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: thursday
+            label: Thursday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: friday
+            label: Friday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: saturday
+            label: Saturday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: sunday
+            label: Sunday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+  - name: page_home
+    label: "Home page"
+    type: file
+    path: content/pages/home.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero
+            label: "Wall of Benelli shotguns and rifles with price tags at Modern Pawn and Guns"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_handguns
+            label: "Smith and Wesson M&P pistol in its case with magazines"
+            type: object
+            description: "Also shows on: Ffl transfers page, Gold and jewelry page, Gunsmith repair services page, Layaway and special orders page, Pawn loans page, Suppressors page, We buy guns page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_sbr
+            label: "Short-barreled AR rifle"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_shotgun
+            label: "Camo Benelli shotgun in a hard case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_ffl
+            label: "AR upper and lower receiver in a shipping box"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_pawn
+            label: "Kimber 2K11 pistol with a bronze finish"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_ammo
+            label: "Shelves stocked floor to ceiling with ammunition"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_build
+            label: "Custom AR build with a camo finish"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_tavor
+            label: "New bullpup rifle in its case"
+            type: object
+            description: "Also shows on: Ffl transfers page, Gold and jewelry page, Guns and gear we carry page, Gunsmith repair services page, Pawn loans page, Suppressors page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: first_rack
+            label: "Rifle rack above the handgun display cases"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: storefront
+            label: "The Modern Pawn and Guns storefront sign on Airline Road"
+            type: object
+            description: "Also shows on: About page, Contact page, Faqs page, Ffl transfers page, Gold and jewelry page, Guns and gear we carry page, Gunsmith repair services page, Layaway and special orders page, Pawn loans page, Suppressors page, We buy guns page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_about
+    label: "About page"
+    type: file
+    path: content/pages/about.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_ammo
+            label: "Shelves stocked floor to ceiling with ammunition behind the glass counter"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_first
+            label: "Racks of shotguns and rifles with price tags under the Springfield XD banner"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_contact
+    label: "Contact page"
+    type: file
+    path: content/pages/contact.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_storefront
+            label: "The Modern Pawn and Guns storefront sign on Airline Road"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_faqs
+    label: "Faqs page"
+    type: file
+    path: content/pages/faqs.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_tavor
+            label: "New tan bullpup in its case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_ffl_transfers
+    label: "Ffl transfers page"
+    type: file
+    path: content/pages/ffl-transfers.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_ar15
+            label: "AR rifle on the counter mat with its price tag"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_lower
+            label: "Stripped AR lower receiver in its shipping box"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_gold_and_jewelry
+    label: "Gold and jewelry page"
+    type: file
+    path: content/pages/gold-and-jewelry.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_jewelcase
+            label: "Trays of rings and chains in the glass case at Modern Pawn and Guns"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_guns_and_gear_we_carry
+    label: "Guns and gear we carry page"
+    type: file
+    path: content/pages/guns-and-gear-we-carry.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_wall
+            label: "Rifles racked above glass cases of handguns at Modern Pawn and Guns"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_wall
+            label: "Rifles in racks above glass cases of handguns"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: t_cerakote
+            label: "Rifle with a custom woodland camo Cerakote finish"
+            type: object
+            description: "Also shows on: Suppressors page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_gunsmith_repair_services
+    label: "Gunsmith repair services page"
+    type: file
+    path: content/pages/gunsmith-repair-services.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_cerakote
+            label: "Rifle with a custom woodland camo Cerakote finish on a tripod"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_ldove
+            label: "Custom .22 ARC rifle with an antique map Cerakote finish"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_layaway_and_special_orders
+    label: "Layaway and special orders page"
+    type: file
+    path: content/pages/layaway-and-special-orders.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_benelli
+            label: "Benelli shotgun with a camo stock in a hard case"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_ridgeline
+            label: "Two Christensen Arms Ridgeline rifles in camo finishes leaning on a wall"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_pawn_loans
+    label: "Pawn loans page"
+    type: file
+    path: content/pages/pawn-loans.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_kimber
+            label: "Kimber 2K11 pistol with a bronze finish"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_mp
+            label: "Smith and Wesson M&P pistol in its case with spare magazines"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_suppressors
+    label: "Suppressors page"
+    type: file
+    path: content/pages/suppressors.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_suppressors
+            label: "Suppressors in their boxes in the glass case, with a 4473 suppressors sign on top"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_cans
+            label: "Boxed suppressors in a glass case at Modern Pawn and Guns"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_we_buy_guns
+    label: "We buy guns page"
+    type: file
+    path: content/pages/we-buy-guns.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_ar10
+            label: "Camo AR-10 rifle in 22 Creedmoor"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: fig_taylor
+            label: "Taylor and Co. reproduction revolver and lever-action rifle on a black background"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string

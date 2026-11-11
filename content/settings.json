@@ -1,0 +1,43 @@
+{
+  "banner": {
+    "show": false,
+    "text": ""
+  },
+  "hours": {
+    "monday": {
+      "open": true,
+      "opens": "9:00 AM",
+      "closes": "7:00 PM"
+    },
+    "tuesday": {
+      "open": true,
+      "opens": "9:00 AM",
+      "closes": "7:00 PM"
+    },
+    "wednesday": {
+      "open": true,
+      "opens": "9:00 AM",
+      "closes": "7:00 PM"
+    },
+    "thursday": {
+      "open": true,
+      "opens": "9:00 AM",
+      "closes": "7:00 PM"
+    },
+    "friday": {
+      "open": true,
+      "opens": "9:00 AM",
+      "closes": "7:00 PM"
+    },
+    "saturday": {
+      "open": true,
+      "opens": "9:00 AM",
+      "closes": "7:00 PM"
+    },
+    "sunday": {
+      "open": false,
+      "opens": "10:00 AM",
+      "closes": "6:00 PM"
+    }
+  }
+}

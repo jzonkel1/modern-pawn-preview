@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_ar10": {
+      "photo": "/img/hero-ar10-1500.jpg",
+      "description": "Camo AR-10 rifle in 22 Creedmoor",
+      "crop": "middle"
+    },
+    "fig_taylor": {
+      "photo": "/img/fig-taylor.jpg",
+      "description": "Taylor and Co. reproduction revolver and lever-action rifle on a black background",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}
